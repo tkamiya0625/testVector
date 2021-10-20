@@ -1,0 +1,110 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <!--
+     ArcGIS API for JavaScript, https://js.arcgis.com
+     For more information about the layers-vectortilelayer-json sample,
+     read the original sample description at developers.arcgis.com.
+     https://developers.arcgis.com/javascript/latest/sample-code/layers-vectortilelayer-json/index.html
+     -->
+  <title>VectorTileLayer from JSON - 4.21</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #topbar {
+      padding: 10px;
+    }
+
+    .action-button {
+      font-size: 14px;
+      height: 32px;
+      margin-top: 10px;
+      border: 1px solid #0079c1;
+      color: #0079c1;
+    }
+
+    .action-button:hover {
+      background: #0079c1;
+      color: #e4e4e4;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.21/"></script>
+  <script>
+
+  require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/layers/VectorTileLayer"
+  ], function(Map, MapView, VectorTileLayer) {
+    const map = new Map({
+      basemap: "topo-vector"
+    });
+    const view = new MapView({
+      container: "viewDiv",
+      map: map,
+      center: [139.754, 35.746],
+      zoom: 9
+    });
+  
+    // load a new vector tile layer from JSON object
+    const contours = new VectorTileLayer({
+        title: "全国市区町村界データ (ベクタータイル)",
+        url: "https://tkamiya0625.github.io/testVector/"
+    });
+    /*
+    const contours = new VectorTileLayer({
+        title: "全国市区町村界データ (ベクタータイル)",
+        url: "./resources/styles/root.json",
+        opacity: 0.5
+    });
+    */
+/*
+    const contours = new VectorTileLayer({
+      style: {
+        version: 8,
+        sources: {
+          esri: {
+            type: "vector",
+            url: "./"
+          }
+        },
+        layers: [{
+            source: "esri",
+            "source-layer": "japan_ver821",
+            "id": "japan_ver821",
+            "paint": {
+                "fill-color": "#0000FF",
+                "fill-outline-color": "#C0C0C0"
+            },
+            "type": "fill"
+        }]
+      }
+    });
+*/
+
+    map.add(contours);
+    view.ui.add("topbar", "top-right");
+  });
+
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv">
+    <div id="topbar" class="esri-widget">
+    </div>
+  </div>
+</body>
+
+</html>
