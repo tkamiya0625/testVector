@@ -1,9 +1,4 @@
 {
-  "center": [
-    139.754,
-    35.746
-  ],
-  "glyphs": "https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "japan_ver821",
@@ -22,7 +17,5 @@
       "type": "vector"
     }
   },
-  "sprite": "./unite-sprite/sprite",
   "version": 8,
-  "zoom": 8.22
 }
