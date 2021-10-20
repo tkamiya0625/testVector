@@ -1,26 +1,27 @@
 {
-	"currentVersion": 10.7,
-	"name": "Hamilton County Contours 50ft",
-	"capabilities": "TilesOnly",
-	"type": "indexedFlat",
-	"defaultStyles": "resources/styles",
-	"tiles": ["zxy/{z}/{x}/{y}.pbf"],
-	"exportTilesAllowed": false,
+	"currentVersion": 10.81,
+	"name": "japan_ver821",
+    "capabilities": "TilesOnly",
+    "type": "indexedVector",
+    "tileMap": "tilemap",
+	"defaultStyles": "/resources/styles",
+	"tiles": ["./zxy/{z}/{x}/{y}.pbf"],
+	"exportTilesAllowed": true,
 	"initialExtent": {
-		"xmin": 122.933749,
-		"ymin": 24.045616,
-		"xmax": 153.986839,
-		"ymax": 45.557239,
+		"xmin":-179.9999885408437,
+		"ymin":-85.05112779126247,
+		"xmax":179.9999885408437,
+		"ymax":85.05112779126246,
 		"spatialReference": {
 			"latestWkid": 4326,
 			"wkid": 4326
 		}
 	},
 	"fullExtent": {
-		"xmin": 122.933749,
-		"ymin": 24.045616,
-		"xmax": 153.986839,
-		"ymax": 45.557239,
+		"xmin":-179.9999885408437,
+		"ymin":-85.05112779126247,
+		"xmax":179.9999885408437,
+		"ymax":85.05112779126246,
 		"spatialReference": {
 			"latestWkid": 4326,
 			"wkid": 4326
@@ -33,7 +34,7 @@
 		"cols": 512,
 		"dpi": 96,
 		"format": "pbf",
-                "origin": {
+        "origin": {
 			"x": -180,
 			"y": 180
 		},
@@ -43,117 +44,117 @@
 		},
 		"lods": [{
 				"level": 0,
-				"resolution": 78271.51696399994,
+				"resolution": 0.703125,
 				"scale": 295828763.795777
 			},
 			{
 				"level": 1,
-				"resolution": 39135.75848200009,
+				"resolution": 0.3515625,
 				"scale": 147914381.897889
 			},
 			{
 				"level": 2,
-				"resolution": 19567.87924099992,
+				"resolution": 0.17578125,
 				"scale": 73957190.948944
 			},
 			{
 				"level": 3,
-				"resolution": 9783.93962049996,
+				"resolution": 0.087890625,
 				"scale": 36978595.474472
 			},
 			{
 				"level": 4,
-				"resolution": 4891.96981024998,
+				"resolution": 0.0439453125,
 				"scale": 18489297.737236
 			},
 			{
 				"level": 5,
-				"resolution": 2445.98490512499,
+				"resolution": 0.02197265625,
 				"scale": 9244648.868618
 			},
 			{
 				"level": 6,
-				"resolution": 1222.992452562495,
+				"resolution": 0.010986328125,
 				"scale": 4622324.434309
 			},
 			{
 				"level": 7,
-				"resolution": 611.4962262813797,
+				"resolution": 0.0054931640625,
 				"scale": 2311162.217155
 			},
 			{
 				"level": 8,
-				"resolution": 305.74811314055756,
+				"resolution": 0.00274658203125,
 				"scale": 1155581.108577
 			},
 			{
 				"level": 9,
-				"resolution": 152.87405657041106,
+				"resolution": 0.001373291015625,
 				"scale": 577790.554289
 			},
 			{
 				"level": 10,
-				"resolution": 76.43702828507324,
+				"resolution": 0.0006866455078125,
 				"scale": 288895.277144
 			},
 			{
 				"level": 11,
-				"resolution": 38.21851414253662,
+				"resolution": 0.00034332275390625,
 				"scale": 144447.638572
 			},
 			{
 				"level": 12,
-				"resolution": 19.10925707126831,
+				"resolution": 0.000171661376953125,
 				"scale": 72223.819286
 			},
 			{
 				"level": 13,
-				"resolution": 9.554628535634155,
+				"resolution": 0.0000858306884765625,
 				"scale": 36111.909643
 			},
 			{
 				"level": 14,
-				"resolution": 4.77731426794937,
+				"resolution": 0.00004291534423828125,
 				"scale": 18055.954822
 			},
 			{
 				"level": 15,
-				"resolution": 2.388657133974685,
+				"resolution": 0.000021457672119140625,
 				"scale": 9027.977411
 			},
 			{
 				"level": 16,
-				"resolution": 1.1943285668550503,
+				"resolution": 0.000010728836059570312,
 				"scale": 4513.988705
 			},
 			{
 				"level": 17,
-				"resolution": 0.5971642835598172,
+				"resolution": 0.000005364418029785156,
 				"scale": 2256.994353
 			},
 			{
 				"level": 18,
-				"resolution": 0.29858214164761665,
+				"resolution": 0.000002682209014892578,
 				"scale": 1128.497176
 			},
 			{
 				"level": 19,
-				"resolution": 0.149291070823808325,
+				"resolution": 0.000001341104507446289,
 				"scale": 564.248588
 			},
 			{
 				"level": 20,
-				"resolution": 0.0746455354119041625,
+				"resolution": 6.705522537231445e-7,
 				"scale": 282.124294
 			},
 			{
 				"level": 21,
-				"resolution": 0.03732276770595208125,
+				"resolution": 3.3527612686157227e-7,
 				"scale": 141.062147
 			},
 			{
 				"level": 22,
-				"resolution": 0.018661383852976040625,
+				"resolution": 1.6763806343078613e-7,
 				"scale": 70.5310735
 			}
 		]
