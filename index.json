@@ -3,7 +3,7 @@
    "name":"全国市区町村界データ",
    "capabilities":"TilesOnly",
    "type":"indexedFlat",
-   "defaultStyles":"/resources/styles",
+   "defaultStyles":"./resources/styles",
    "tiles":[
      "./zxy/{z}/{x}/{y}.pbf"
    ],
