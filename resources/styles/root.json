@@ -1,21 +1,21 @@
 {
-  "layers": [
-    {
-      "id": "japan_ver821",
-      "paint": {
-        "fill-color": "#0000FF",
-        "fill-outline-color": "#C0C0C0"
-      },
-      "source": "esri",
-      "source-layer": "japan_ver821",
-      "type": "fill"
-    }
-  ],
-  "sources": {
-    "esri": {
-      "url": "https://tkamiya0625.github.io/testVector/",
-      "type": "vector"
-    }
-  },
-  "version": 8,
+   "version":8,
+   "sources":{
+      "esri":{
+         "url":"https://tkamiya0625.github.io/testVector/",
+         "type":"vector"
+      }
+   },
+   "layers":[
+      {
+         "id":"japan_ver821",
+         "paint":{
+            "fill-color":"#0000FF",
+            "fill-outline-color":"#C0C0C0"
+         },
+         "source":"esri",
+         "source-layer":"japan_ver821",
+         "type":"fill"
+      }
+   ]
 }
