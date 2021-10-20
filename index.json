@@ -6,7 +6,7 @@
    "tileMap":"tilemap",
    "defaultStyles":"/resources/styles",
    "tiles":[
-      "./zxy/{z}/{x}/{y}.pbf"
+      "/zxy/{z}/{x}/{y}.pbf"
    ],
    "exportTilesAllowed":true,
    "initialExtent":{
