@@ -5,7 +5,7 @@
    "type":"indexedFlat",
    "defaultStyles":"/resources/styles",
    "tiles":[
-     "../{z}/{x}/{y}.pbf"
+     "./zxy/{z}/{x}/{y}.pbf"
    ],
    "exportTilesAllowed":false,
    "initialExtent":{
