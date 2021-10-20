@@ -3,8 +3,8 @@
 	"name": "Hamilton County Contours 50ft",
 	"capabilities": "TilesOnly",
 	"type": "indexedFlat",
-	"defaultStyles": "/resources/styles",
-	"tiles": ["/zxy/{z}/{x}/{y}.pbf"],
+	"defaultStyles": "resources/styles",
+	"tiles": ["zxy/{z}/{x}/{y}.pbf"],
 	"exportTilesAllowed": false,
 	"initialExtent": {
 		"xmin": 122.933749,
@@ -12,6 +12,7 @@
 		"xmax": 153.986839,
 		"ymax": 45.557239,
 		"spatialReference": {
+			"latestWkid": 4326,
 			"wkid": 4326
 		}
 	},
@@ -21,6 +22,7 @@
 		"xmax": 153.986839,
 		"ymax": 45.557239,
 		"spatialReference": {
+			"latestWkid": 4326,
 			"wkid": 4326
 		}
 	},
@@ -32,12 +34,12 @@
 		"dpi": 96,
 		"format": "pbf",
                 "origin": {
-			"x": 139.921875,
-			"y": 36.029280
+			"x": -180,
+			"y": 180
 		},
 		"spatialReference": {
 			"wkid": 4326 ,
-			"latestWkid": 3857
+			"latestWkid": 4326
 		},
 		"lods": [{
 				"level": 0,
