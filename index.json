@@ -3,7 +3,7 @@
 	"name": "Hamilton County Contours 50ft",
 	"capabilities": "TilesOnly",
 	"type": "indexedFlat",
-	"defaultStyles": "resources/styles",
+	"defaultStyles": "resources/styles/root.json",
 	"tiles": ["zxy/{z}/{x}/{y}.pbf"],
 	"exportTilesAllowed": false,
 	"initialExtent": {
